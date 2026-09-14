@@ -1,0 +1,351 @@
+/* ==========================================================================
+   1. ESTILOS BASE Y CELULARES (< 600px)
+   ========================================================================== */
+
+/* Hero */
+.hero {
+  padding: 2.5rem 0;
+}
+
+.hero-contenido {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-texto h1 {
+  font-family: var(--font-titulos);
+  font-size: 2rem;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+.hero-texto h1 span {
+  display: block;
+  color: var(--color-principal-oscuro);
+}
+
+.hero-texto p {
+  color: var(--color-text-secundario);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-botones {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.hero-ilustracion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-imagen-hero {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.12);
+  border: 1px solid var(--color-borde-general);
+}
+
+.imagen-hero {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Servicios */
+.tarjetas-servicios {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.tarjeta-servicio {
+  background-color: var(--color-bg-tarjeta);
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--color-borde-general);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta-servicio:hover {
+  border-color: var(--color-principal-marca);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.08);
+}
+
+.icono-servicio {
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-principal-suave);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.25rem;
+}
+
+.tarjeta-servicio h3 {
+  font-family: var(--font-titulos);
+  color: var(--color-principal-oscuro);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.tarjeta-servicio p {
+  color: var(--color-text-secundario);
+  font-size: 0.95rem;
+}
+
+/* Sección equipo profesional */
+.profesionales-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.tarjeta-profesional {
+  background-color: var(--color-bg-tarjeta);
+  border-radius: 12px;
+  border: 1px solid var(--color-borde-general);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.tarjeta-profesional:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.1);
+  border-color: var(--color-principal-suave);
+}
+
+.profesional-imagen {
+  width: 100%;
+  height: 220px;
+  background-color: var(--color-principal-suave);
+  overflow: hidden;
+  position: relative;
+}
+
+.profesional-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-profesional:hover .profesional-imagen img {
+  transform: scale(1.03);
+}
+
+.profesional-contenido {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.especialidad {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--color-principal-oscuro);
+  background-color: var(--color-principal-suave);
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.tarjeta-profesional:hover .especialidad {
+  background-color: var(--color-principal-marca);
+  color: #ffffff;
+}
+
+.tarjeta-profesional h3 {
+  font-family: var(--font-titulos);
+  font-size: 1.2rem;
+  color: var(--color-text-principal);
+  margin-bottom: 0.2rem;
+}
+
+.matricula {
+  font-size: 0.85rem;
+  color: var(--color-text-atenuado);
+  margin-bottom: 1.2rem;
+}
+
+.precio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  margin-top: auto;
+  border-top: 1px solid var(--color-borde-general);
+  font-size: 0.9rem;
+  color: var(--color-text-secundario);
+}
+
+.precio strong {
+  font-family: var(--font-titulos);
+  font-size: 1.15rem;
+  color: var(--color-principal-oscuro);
+}
+
+/* CTA */
+.seccion-cta {
+  background-color: var(--color-principal-oscuro);
+  color: var(--color-bg-tarjeta);
+  padding: 2.5rem 0;
+}
+
+.cta-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.cta-contenido h2 {
+  font-family: var(--font-titulos);
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.cta-contenido p {
+  color: var(--color-principal-suave);
+}
+
+.redes-sociales {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  justify-content: center;
+}
+
+.red-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--color-bg-seccion-clara);
+  color: var(--color-text-secundario);
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.red-icon:hover {
+  background-color: var(--color-principal-marca);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+
+/* ==========================================================================
+   2. TABLETS (≥ 600px)
+   ========================================================================== */
+@media (min-width: 600px) {
+  .hero-texto h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-botones {
+    flex-direction: row;
+  }
+
+  .tarjetas-servicios,
+  .profesionales-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .redes-sociales {
+    justify-content: flex-start;
+  }
+}
+
+
+/* ==========================================================================
+   3. COMPUTADORAS / LAPTOPS (≥ 1024px)
+   ========================================================================== */
+@media (min-width: 1024px) {
+  .hero {
+    padding: 4rem 0;
+  }
+
+  .hero-contenido {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .hero-texto h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-texto p {
+    font-size: 1.1rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .contenedor-imagen-hero {
+    max-width: 480px;
+    height: 340px;
+    aspect-ratio: auto;
+  }
+
+  .tarjetas-servicios,
+  .profesionales-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .profesional-contenido {
+    padding: 1.5rem;
+  }
+
+  .seccion-cta {
+    padding: 3.5rem 0;
+  }
+
+  .cta-contenido {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    gap: 2rem;
+  }
+
+  .cta-contenido h2 {
+    font-size: 2rem;
+  }
+}
+
+
+/* ==========================================================================
+   4. MONITORES GRANDES (≥ 1440px)
+   ========================================================================== */
+@media (min-width: 1440px) {
+  .profesionales-grid {
+    gap: 2rem;
+  }
+}
