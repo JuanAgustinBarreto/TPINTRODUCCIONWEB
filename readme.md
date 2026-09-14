@@ -1,4 +1,4 @@
-Veterinaria La Mary
+Veterinaria Laika
 
 Trabajo Final Integrador
 -Asignatura: Introducción al Desarrollo Web
@@ -10,10 +10,10 @@ Integrantes
 -Barreto, Juan Agustin
 -Romiti, Juan Bautista
 -Di Braida, Facundo
--Matías
+-Sánchez Zapata, Matías
 
 Descripción del proyecto
-Veterinaria La Mary es una aplicación web desarrollada para una clínica veterinaria con el objetivo de facilitar la gestión de la atención de mascotas y brindar información sobre el establecimiento y sus profesionales.
+Veterinaria Laika es una aplicación web desarrollada para una clínica veterinaria con el objetivo de facilitar la gestión de la atención de mascotas y brindar información sobre el establecimiento y sus profesionales.
 
 El proyecto será desarrollado progresivamente a lo largo del Trabajo Final Integrador, incorporando los conocimientos adquiridos durante el cursado de la asignatura.
 
@@ -22,7 +22,7 @@ En esta primera etapa se desarrolló la estructura inicial del sitio web utiliza
 El proyecto cuenta con las siguientes páginas:
 
 Sitio público
-Inicio / Portada: presentación de Veterinaria La Mary y listado de profesionales disponibles.
+Inicio / Portada: presentación de Veterinaria Laika y listado de profesionales disponibles.
 Información Institucional: información general sobre la veterinaria.
 Contacto: información y medios de contacto del establecimiento.
 
@@ -35,38 +35,16 @@ Gestión de Turnos.
 Gestión de Historias Clínicas.
 
 Tecnologías utilizadas:
-Para esta primera entrega se utilizaron:
+Para la primera entrega se utilizaron:
 -HTML
 -CSS
 -Vite
 
-Durante las próximas etapas se incorporarán:
+Para la segunda entrega, incorporamos:
+RWD, diseño responsive con menú de navegación hamburguesa.
+Le incorporamos main.js para que funcione el menú.
 Bootstrap
-JavaScript
-DOM
-LocalStorage
-Fetch API
-Async/Await
-Promesas
-API REST
 
-Estructura del proyecto
-veterinaria-la-mary/
-│
-├── index.html
-├── institucional.html
-├── contacto.html
-│
-├── css/
-    ├── styles.css
-├── README.md
-│
-└── admin/
-    ├── dashboard.html
-    ├── veterinarios.html
-    ├── mascotas.html
-    ├── turnos.html
-    └── historia-clinica.html
 
 Instalación y ejecución
 Para ejecutar el proyecto localmente es necesario tener instalado Node.js.
