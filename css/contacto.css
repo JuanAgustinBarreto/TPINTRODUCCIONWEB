@@ -1,0 +1,209 @@
+/* Banner de Cabecera */
+.pagina-cabecera {
+    background-color: var(--color-bg-seccion-clara);
+    padding: 3rem 0;
+    text-align: center;
+    border-bottom: 1px solid var(--color-borde-general);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.pagina-cabecera h1 {
+    font-family: var(--font-titulos);
+    font-size: 2.2rem;
+    color: var(--color-principal-oscuro);
+    margin: 0.5rem 0 0.8rem;
+}
+
+.pagina-cabecera p {
+    font-size: 1rem;
+    color: var(--color-text-secundario);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Columna de información de contacto */
+.contacto-introduccion {
+    color: var(--color-text-secundario);
+    margin-bottom: 2rem;
+}
+
+.dato-contacto {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.dato-icono {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: var(--color-principal-suave);
+    color: var(--color-principal-marca);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dato-icono .footer-icon {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dato-contacto h3 {
+    font-family: var(--font-titulos);
+    font-size: 1.05rem;
+    color: var(--color-text-principal);
+    margin-bottom: 0.2rem;
+}
+
+.dato-contacto p {
+    color: var(--color-text-secundario);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Formulario de contacto */
+.contacto-formulario {
+    background-color: var(--color-bg-tarjeta);
+    border: 1px solid var(--color-borde-general);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.formulario-encabezado {
+    margin-bottom: 1.5rem;
+}
+
+.formulario-encabezado h2 {
+    font-family: var(--font-titulos);
+    font-size: 1.5rem;
+    color: var(--color-principal-oscuro);
+    margin-bottom: 0.4rem;
+}
+
+.formulario-encabezado p {
+    color: var(--color-text-secundario);
+    font-size: 0.95rem;
+}
+
+/* Tarjeta Info */
+.tarjeta-info {
+    background-color: var(--color-bg-tarjeta);
+    padding: 2rem 1.25rem;
+    border-radius: 12px;
+    border: 1px solid var(--color-borde-general);
+    text-align: center;
+    transition: transform 0.2s ease, border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.tarjeta-info:hover {
+    border-color: var(--color-principal-marca);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.tarjeta-info-icono {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 1.25rem auto;
+    border-radius: 50%;
+    background-color: var(--color-principal-suave);
+    color: var(--color-principal-marca);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tarjeta-info h3 {
+    font-family: var(--font-titulos);
+    font-size: 1.25rem;
+    color: var(--color-text-principal);
+    margin-bottom: 0.8rem;
+}
+
+.tarjeta-info p {
+    color: var(--color-text-secundario);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Beneficios */
+.beneficio {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem;
+    background-color: var(--color-bg-tarjeta);
+    border: 1px solid var(--color-borde-general);
+    border-radius: 10px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.beneficio:hover {
+    border-color: var(--color-principal-marca);
+}
+
+.beneficio > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: var(--color-principal-suave);
+    color: var(--color-principal-oscuro);
+    font-weight: bold;
+    border-radius: 50%;
+    flex-shrink: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.beneficio h3 {
+    font-family: var(--font-titulos);
+    font-size: 1.1rem;
+    color: var(--color-text-principal);
+    margin-bottom: 0.35rem;
+}
+
+.beneficio p {
+    color: var(--color-text-secundario);
+    font-size: 0.95rem;
+}
+
+/* Mapa (placeholder) */
+.mapa-placeholder {
+    background-color: var(--color-bg-tarjeta);
+    border: 1px solid var(--color-borde-general);
+    border-radius: 16px;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.mapa-icono {
+    font-size: 2.5rem;
+    display: inline-block;
+    margin-bottom: 0.8rem;
+}
+
+.mapa-placeholder h3 {
+    font-family: var(--font-titulos);
+    font-size: 1.3rem;
+    color: var(--color-principal-oscuro);
+    margin-bottom: 0.5rem;
+}
+
+.mapa-placeholder p {
+    color: var(--color-text-secundario);
+}
